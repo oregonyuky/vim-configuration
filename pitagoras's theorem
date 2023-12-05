@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+int number(char num1, char num2){
+    
+    if (num1 == 'h' && num2 == 'c'){
+        return -1;
+    }
+    else if (num1 == 'c' && num2 == 'c'){
+        return 0;
+    }
+    else if (num1 == 'c' && num2 == 'h'){
+        return 1;
+    }
+}
+int main(){
+    char num1, num2, result;
+    float a, d, x, y, e, f, g;
+    scanf("%f %f %c %c",&a, &d, &num1, &num2);
+    result = number(num1, num2);
+    x = pow(a, 2);
+    y = pow(d, 2);
+    if (result == -1){
+        e = x - y;
+        printf("a hipotenusa e cateto e: %f", e);
+    }
+    else if (result == 0){
+        f = x + y;
+        printf("a soma entren os catetos e catetos e: %f", f);
+    }
+    else if (result == 1){
+        g = y - x;
+        printf("a soma entren os catetos ou hipotenusa e: %f", g);
+    }
+    
+    return 0;
+    
+}
