@@ -14,6 +14,8 @@ set number
 set showmatch
 set relativenumber
 set mouse=a
+set guifont=Lucida_Console:h12
+set backspace=indent,eol,start
 
 call plug#begin('~/vimfiles/plugged')
 Plug 'jiangmiao/auto-pairs'
@@ -24,6 +26,6 @@ autocmd filetype cpp nnoremap <F9> :w<bar> !g++ -std=c++14 % -o %:r -Wl,--stack,
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
 "autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)\/\/\/\//\1<CR> $
 
-vnoremap <C-c> "+y
+vnoremap <C-C> "+y
 map <C-v> "+P
-vnoremap <C-c> "*y :let @+=@*<CR>
+vnoremap <C-C> "*y :let @+=@*<CR>
