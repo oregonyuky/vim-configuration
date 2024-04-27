@@ -14,7 +14,7 @@ set number
 set showmatch
 set relativenumber
 set mouse=a
-set guifont=Lucida_Console:h12
+set guifont=Fixedsys:h9
 set backspace=indent,eol,start
 
 call plug#begin('~/vimfiles/plugged')
@@ -29,3 +29,6 @@ autocmd filetype cpp nnoremap <F10> :!%:r<CR>
 vnoremap <C-C> "+y
 map <C-v> "+P
 vnoremap <C-C> "*y :let @+=@*<CR>
+
+nnoremap <C-l> :tabn<CR>
+nnoremap <C-k> :tabp<CR>
