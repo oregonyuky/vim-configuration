@@ -14,7 +14,7 @@ set number
 set showmatch
 set relativenumber
 set mouse=a
-set guifont=Fixedsys:h9
+set guifont=Lucida_Console:h11
 set backspace=indent,eol,start
 
 call plug#begin('~/vimfiles/plugged')
