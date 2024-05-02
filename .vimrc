@@ -28,3 +28,6 @@ autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)\/\/\/\//\1<CR> $
 vnoremap <C-C> "+y
 map <C-v> "+P
 vnoremap <C-C> "+y :let @+=@*<CR>
+
+map <C-l> :tabp<CR>
+map <C-k> :tabn<CR>
