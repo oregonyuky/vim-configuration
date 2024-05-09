@@ -12,7 +12,7 @@ Install also this on powershell
 Set-WinSystemLocale en-US
 Set-WinUserLanguageList en-US
 ```
-##Important part Vim .vimrc
+## Important part Vim .vimrc
 So now you can set up this script to use [vim][] with c++ compile
 ```
 set enc=utf=8
