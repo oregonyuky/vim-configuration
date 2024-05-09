@@ -1,5 +1,5 @@
 # Vim configuration based on my set up
-try to use you vim more efficiently
+try to use your vim more efficiently
 ## Plug Install (windows)
 Install this on powershell 
 ```
@@ -49,6 +49,7 @@ vnoremap <C-C> "+y :let @+=@*<CR>
 map <C-l> :tabn<CR>
 map <C-k> :tabp<CR>
 ```
+[vim]: https://www.vim.org/
 ## clang (optional)
 if you don`t have mingw on you path. You can choose to install clang conpiler version on this system
 ```
