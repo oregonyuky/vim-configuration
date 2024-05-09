@@ -1,1 +1,1 @@
-Hello my name is akio
+# Vim configuration based on my set up
