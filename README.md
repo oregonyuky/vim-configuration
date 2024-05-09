@@ -52,6 +52,6 @@ map <C-k> :tabp<CR>
 [vim]: https://www.vim.org/
 ## clang (optional)
 if you don`t have mingw on you path. You can choose to install clang conpiler version on this system
-```
-https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.4
-```
+
+ * https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.4
+
