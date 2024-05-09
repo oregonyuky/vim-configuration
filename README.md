@@ -2,19 +2,19 @@
 try to use your vim more efficiently
 ## Plug Install (windows)
 Install this on powershell 
-```
+```powershell
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
 ```
 ## English set up (windows)
 Install also this on powershell
-```
+```powershell
 Set-WinSystemLocale en-US
 Set-WinUserLanguageList en-US
 ```
 ## Important part Vim .vimrc
 So now you can set up this script to use [vim][] with c++ compile
-```
+```vim
 set enc=utf=8
 set fenc=utf-8
 set termencoding=utf-8
