@@ -41,6 +41,8 @@ call plug#end()
 nmap <F2> :w<CR>
 autocmd filetype cpp nnoremap <F9> :w<bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
+autocmd filetype c nnoremap <F7> :w<bar> !gcc -std=c99 % -o %:r -Wl,--stack,268435456<CR>
+autocmd filetype c nnoremap <F8> :!%:r<CR>
 "autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)\/\/\/\//\1<CR> $
 vnoremap <C-C> "+y
 map <C-v> "+P
