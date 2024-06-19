@@ -59,3 +59,15 @@ if you don`t have mingw on you path. You can choose to install clang conpiler ve
 
  * https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.4
 
+## VS code settings
+write this on settings.json
+```json
+{
+    "files.autoSave": "afterDelay",
+    "code-runner.runInTerminal": true,
+    "files.exclude": {
+        "**/*.exe": true
+    }
+}
+```
+
