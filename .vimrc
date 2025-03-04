@@ -1,4 +1,3 @@
-set enc=utf=8
 set fenc=utf-8
 set termencoding=utf-8
 set nocompatible
@@ -17,10 +16,13 @@ set mouse=a
 set guifont=Lucida_Console:h12
 set backspace=indent,eol,start
 
-call plug#begin('~/vimfiles/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
+Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
+
 call plug#end()
 
+colorscheme nightfly
 nmap <F2> :w<CR>
 autocmd filetype cpp nnoremap <F9> :w<bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
@@ -31,3 +33,4 @@ vnoremap <C-C> "+y :let @+=@*<CR>
 
 map <C-l> :tabn<CR>
 map <C-k> :tabp<CR>
+map <C-s> :wq<CR>
