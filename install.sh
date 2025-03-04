@@ -19,6 +19,9 @@ sudo apt-get install -y \
     vim \
     curl 
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 ok "System updated!"
 ok "Git"
 ok "Vim"
