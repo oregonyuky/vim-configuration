@@ -50,3 +50,5 @@ ok "NodeJS global modules"
 sudo apt update
 sudo apt install openjdk-11-jdk -y
 ok "Java"
+
+sudo apt install bundle
