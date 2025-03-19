@@ -17,7 +17,10 @@ sudo apt-get upgrade -y
 sudo apt-get install -y \
     git git-core \
     vim \
-    curl 
+    curl \
+    build-essential \
+    g++ \
+    nodejs \
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -26,6 +29,9 @@ ok "System updated!"
 ok "Git"
 ok "Vim"
 ok "curl"
+ok "gcc"
+ok "g++"
+ok "nodejs"
 
 if has_not pip; then
   sudo apt-get install python-pip python-dev build-essential
@@ -44,11 +50,9 @@ if ! [[ -d "$HOME/.nvm" ]]; then
 fi
 ok "NVM"
 
-npm i -g nodemon hmh-cli clima
-ok "NodeJS global modules"
 
 sudo apt update
-sudo apt install openjdk-11-jdk -y
+sudo apt install openjdk-17-jdk -y
 ok "Java"
 
 sudo apt install bundle
